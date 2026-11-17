@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mapa de Reservas</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="topo">
+
+
+<h2>Mapa de Reservas</h2>
+
+
+<div class="menu">
+
+
+<button id="btnHoje">
+Hoje
+</button>
+
+
+<button id="btnAtualizar">
+Atualizar
+</button>
+
+
+<button id="btnNovaReserva">
+Nova Reserva
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="legend">
+
+
+<div class="itemLegend">
+
+<div class="cor verde"></div>
+
+Check-in
+
+</div>
+
+
+
+<div class="itemLegend">
+
+<div class="cor amarelo"></div>
+
+Em Limpeza
+
+</div>
+
+
+
+<div class="itemLegend">
+
+<div class="cor azul"></div>
+
+Check-out
+
+</div>
+
+
+
+<div class="itemLegend">
+
+<div class="cor vermelho"></div>
+
+Hospedado
+
+</div>
+
+
+</div>
+
+
+
+<div class="wrapper">
+
+
+<div class="timeline">
+
+
+<div class="colunaHospedagem">
+
+
+<div class="headerHospedagem">
+
+Hospedagens
+
+</div>
+
+
+<div id="listaHospedagens"></div>
+
+
+</div>
+
+
+
+<div class="calendario">
+
+
+<div class="meses" id="cabecalhoMeses"></div>
+
+
+<div class="grid" id="gradeReservas"></div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+<!-- MODAL NOVA RESERVA -->
+
+<div id="modalReserva" class="modalReserva">
+
+
+<div class="caixaReserva">
+
+
+<h3>Nova Reserva</h3>
+
+
+
+<label>Hóspede</label>
+
+<input 
+id="nomeHospede"
+type="text"
+placeholder="Nome do hóspede"
+>
+
+
+
+<label>Telefone</label>
+
+<input 
+id="telefoneHospede"
+type="text"
+placeholder="Telefone"
+>
+
+
+
+<label>Hospedagem</label>
+
+<select id="casaReserva"></select>
+
+
+
+<label>Entrada</label>
+
+<input 
+id="dataEntrada"
+type="date"
+>
+
+
+
+<label>Saída</label>
+
+<input 
+id="dataSaida"
+type="date"
+>
+
+
+
+<label>Status</label>
+
+
+<select id="statusReserva">
+
+<option value="Check-in">
+Check-in
+</option>
+
+<option value="Em Limpeza">
+Em Limpeza
+</option>
+
+<option value="checkout">
+Check-out
+</option>
+
+<option value="Hospedado">
+Hospedado
+</option>
+
+</select>
+
+
+<div class="acoesReserva">
+
+<button id="salvarReserva">
+Salvar
+</button>
+
+
+<button id="btnExcluirReserva" style="display:none;background:#ef4444;">
+Excluir Reserva
+</button>
+
+
+<button id="cancelarReserva">
+Cancelar
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<button id="salvarReserva">
+
+Salvar
+
+</button>
+
+
+
+<button id="cancelarReserva">
+
+Cancelar
+
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+<!-- CARREGAMENTO DO SISTEMA -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
